@@ -1,0 +1,21 @@
+{
+  "name": "a1qa-wdio-framework",
+  "type": "module",
+  "scripts": {
+    "chrome.mocha": "wdio run ./configs/chrome.mocha.conf.js",
+    "test:searchAndResultMatch": "wdio run ./configs/chrome.mocha.conf.js --spec ./test/specs/searchTest.js"
+  },
+  "dependencies": {
+    "@wdio/mocha-framework": "^8.35.0",
+    "@wdio/allure-reporter": "^8.34.0",
+    "@wdio/spec-reporter": "^8.32.4",
+    "@wdio/local-runner": "^8.35.1",
+    "@babel/preset-env": "^7.24.3",
+    "@babel/register": "^7.23.7",
+    "@babel/core": "^7.24.3",
+    "@wdio/cli": "^8.35.1",
+    "fs-extra": "^11.2.0",
+    "winston": "^3.13.0",
+    "chai": "^5.1.0"
+  }
+}
